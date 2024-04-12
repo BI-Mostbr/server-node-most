@@ -14,8 +14,8 @@ app.post('/api/intermediary', async (req, res) => {
     const { url, method, body, headers } = req.body;
 
     // Carregando os certificados
-    const certificado = fs.readFileSync('./cert/Certificado_itau.crt');
-    const chave = fs.readFileSync('./cert/NOVO_CERTIFICADO.key');
+    const certificado = fs.readFileSync('/home/ubuntu/server10/cert/Certificado_itau.crt');
+    const chave = fs.readFileSync('/home/ubuntu/server10/cert/NOVO_CERTIFICADO.key');
 
     // Opções da requisição, incluindo certificados, corpo e cabeçalhos
     const options = {
