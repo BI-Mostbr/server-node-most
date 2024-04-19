@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Middleware para configurar CORS
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://app.mostbr.com.br/'); // Substitua pelo seu domínio
+  res.setHeader('Access-Control-Allow-Origin', 'https://app.flutterflow.io'); // Substitua pelo seu domínio
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
